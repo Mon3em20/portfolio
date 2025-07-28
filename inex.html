@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abdelmonem Sayed Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav id="desktop-nav">
+
+    <div class="logo">Abdelmonem Sayed</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Abdelmonem Sayed</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="togleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menue-links">
+            <ul>
+                <li><a href="#about" onclick="togleMenu()">About</a></li>
+                <li><a href="#education" onclick="togleMenu()">Education</a></li>
+                <li><a href="#experience" onclick="togleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="togleMenu()">Projects</a></li>
+                <li><a href="#languages" onclick="togleMenu()">Languages</a></li>
+                <li><a href="#contact" onclick="togleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu-overlay" onclick="togleMenu()"></div>
+
+</nav>
+<section id="profile">
+
+    <div class="section__pic-container">
+
+        <img src="./assets/monem.jpg" alt="Abdelmonem Sayed">
+    </div>
+    <div class="section__text">
+        <h1>Hi, I'm Abdelmonem Sayed</h1>
+        <h4 class="blue-accent">Future Ethical Hacker</h4>
+
+        <div class="btn__container">
+            <button class="btn" onclick="window.open('../assets/Abdelmonem_Sayed_CV.pdf', '_blank')">
+                Download CV
+            </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/Linkedin.png" alt="My LinkedIn Profile"
+                 class="icon" onclick="location.href='https://www.linkedin.com/in/monem-somida-9739b2312/'">
+            <img src="./assets/Github.png" alt="My Github Profile"
+                 class="icon" onclick="location.href='https://github.com/Mon3em20'">
+        </div>
+    </div>
+</section>
+
+<!--                    <>!&#45;&#45;/////////////////// Abot Me Section////////////////&ndash;&gt;-->
+
+
+<section id="about" class="card ">
+    <div class="about-content about-flow">
+        <h2 class="section-title">About <span class="blue-accent">Me</span></h2>
+        <ul class="edu-notes about-animated">
+            <li>
+                <span class="blue-accent">Computer Science</span> student at <span class="blue-accent">GIU</span>, specializing in <span class="blue-accent">Cybersecurity</span>.<br>
+                Strong background in software development using <span class="highlight">Java</span>, <span class="highlight">C++</span>, <span class="highlight">JavaScript</span>, and <span class="highlight">Flutter</span>.<br>
+                Currently expanding my knowledge in <span class="highlight">Data Science</span>.<br>
+                Interested in <span class="blue-accent">internships</span> focused on <span class="highlight">cybersecurity</span> and <span class="highlight">secure systems</span>.<br>
+                Experienced with <span class="blue-accent">encryption</span>, <span class="blue-accent">system protection</span>, and modern programming tools.
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="education" class="card">
+    <h2 class="section-title">Education</h2>
+    <ul class="edu-notes about-animated">
+        <li>German International University <span class="blue-accent">(GIU)</span> </li>
+        <li> <span class="blue-accent">BSc</span> Computer Science, Cybersecurity</li>
+        <li><span class="highlight">Oct 2023</span> – <span class="highlight">Jun 2027</span></li>
+        <li>GPA: <span class="gpa-badge">3.32 (B)</span></li>
+        <li>Elective: <span class="blue-accent">Data Science</span></li>
+        <li>Focus: Secure Software, Cryptography, Protection</li>
+    </ul>
+</section>
+
+
+<section id="experience" class="card">
+    <h2 class="section-title">Experience</h2>
+    <ul class="edu-notes about-animated">
+        <li>
+            <span class="blue-accent" style="font-size:1.15rem;font-weight:700;">Software Development & Networking <span class="highlight">Intern</span></span>
+        </li>
+        <li>Genesis – Arma Group, Cairo, Egypt</li>
+        <li><span class="highlight">July 15, 2025</span> – <span class="highlight">September 15, 2025</span></li>
+        <li style="font-size:0.98rem;">
+            <ul style="margin-top:0.5rem;list-style:disc inside;color:#b8c2d0;">
+                <li>Shadowed software and networking teams in an enterprise environment.</li>
+                <li>Joined team discussions, training, and technical knowledge sharing.</li>
+                <li>Collaborated on training projects with other interns.</li>
+                <li>Improved understanding of system architecture and IT practices.</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+
+<section id="skills" class="card">
+    <h2 class="section-title">My <span class="blue-accent">Skills</span></h2>
+    <ul class="edu-notes about-animated">
+        <div class="skills-grid">
+
+            <div class="skill-box">
+
+                <h4><i class="fas fa-code blue-accent"></i> Coding Skills</h4>
+                <ul>
+                    <li><span>Java</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 85%"></div>
+                            <span class="bar-percent">85%</span>
+                        </div>
+                    </li>
+                    <li><span>C++</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 80%"></div>
+                            <span class="bar-percent">80%</span>
+                        </div>
+                    </li>
+
+
+                    <li><span>JavaScript</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 75%" ></div>
+                            <span class="bar-percent">75%</span>
+
+                        </div>
+                    </li>
+                    <li><span>Python</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 70%"></div>
+                            <span class="bar-percent">70%</span>
+
+                        </div>
+                    </li>
+
+                    <li><span>React.js</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 70%"></div>
+                            <span class="bar-percent">70%</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span>HTML</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 80%"></div>
+                            <span class="bar-percent">80%</span>
+                        </div>
+                    </li>
+                    <li><span>CSS</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 75%"></div>
+                            <span class="bar-percent">75%</span>
+
+                        </div>
+                    </li>
+
+                    <li><span>Node.js</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 75%"></div>
+                            <span class="bar-percent">75%</span>
+                        </div>
+                    </li>
+                    <li><span>SQL</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 75%"></div>
+                            <span class="bar-percent">75%</span>
+                        </div>
+                    </li>
+                    <li><span>MongoDB</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 80%"></div>
+                            <span class="bar-percent">80%</span>
+                        </div>
+                    </li>
+                    <li><span>Flutter</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 50%"></div>
+                            <span class="bar-percent">50%</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h4><i class="fas fa-tools blue-accent"></i> Professional Skills</h4>
+                <ul>
+                    <li><span>Web Development</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 75%"></div>
+                            <span class="bar-percent">75%</span>
+                        </div>
+                    </li>
+                    <li><span>Cybersecurity</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 60%"></div>
+                            <span class="bar-percent">60%</span>
+                        </div>
+                    </li>
+                    <li><span>Data Analysis</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 60%"></div>
+                            <span class="bar-percent">60%</span>
+                        </div>
+                    </li>
+                    <li><span>Data Structures & Algorithms</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 85%"></div>
+                            <span class="bar-percent">85%</span>
+                        </div>
+                    </li>
+                    <li><span>Git & GitHub</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 90%"></div>
+                            <span class="bar-percent">90%</span>
+                        </div>
+                    </li>
+
+                    <li><span>Communication Skills</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 90%"></div>
+                            <span class="bar-percent">90%</span>
+                        </div>
+                    </li>
+                    <li><span>UI/UX Principles</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 60%"></div>
+                            <span class="bar-percent">60%</span>
+                        </div>
+                    </li>
+                    <li><span>Software Testing & Debugging</span>
+                        <div class="bar-wrapper">
+                            <div class="fill-bg"></div>
+                            <div class="fill-line" style="width: 55%"></div>
+                            <span class="bar-percent">55%</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </ul>
+    </ul>
+</section>
+
+
+
+<!--Projects Section-->
+
+<section id="projects" class="card">
+    <h2 class="section-title">Key <span class="blue-accent">Projects</span></h2>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <img src="./assets/Online%20Event%20Ticketing%20System.png" alt="RSA Encryption" class="project-img">
+            <div class="project-info">
+                <h3>Online Event Ticketing System (MERN)</h3>
+                <p> Full-stack platform for browsing, booking, and managing event tickets with role-based access.</p>
+                <a href="https://github.com/Pedro4O4/masr7.git" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./assets/DES%20Encryption%20in%20CBC%20Mode.png" alt="DES Encryption" class="project-img">
+            <div class="project-info">
+                <h3>DES Encryption in CBC Mode (Python)</h3>
+                <p>Custom implementation of DES encryption supporting CBC mode for secure message processing.</p>
+                <a href="https://github.com/Mon3em20/DES-Encryption-in-CBC-Mode.git" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="./assets/RSA%20Encryption%20&%20Decryption.png" alt="RSA Encryption" class="project-img">
+            <div class="project-info">
+                <h3>RSA Encryption & Decryption (Java)</h3>
+                <p>Manual RSA key generation and file encryption/decryption for data security.</p>
+                <a href="https://github.com/Mon3em20/RSA-Encryption-and-Decryption-Implementation.git" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="project-card">
+            <img src="./assets/Employee%20Attrition%20Data%20Analysis.png" alt="Employee Attrition" class="project-img">
+            <div class="project-info">
+                <h3>Employee Attrition Data Analysis (Python)</h3>
+                <p>Data exploration, cleaning, and visualization to identify attrition factors.</p>
+                <a href="https://github.com/Mon3em20/Employee-Attrition-Data-Analysis-Preparation.git" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="./assets/Employee%20Attrition%20Prediction%20(ML).png" alt="Employee Attrition ML" class="project-img">
+            <div class="project-info">
+                <h3>Employee Attrition Prediction (ML)</h3>
+                <p>Machine learning models to classify and predict employee attrition.</p>
+                <a href="https://github.com/Mon3em20/Employee-Attrition-Prediction-Machine-Learning-Classification.git" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="./assets/Customer%20Segmentation%20(Clustering).png" alt="Customer Segmentation" class="project-img">
+            <div class="project-info">
+                <h3>Customer Segmentation (Clustering)</h3>
+                <p>Clustering algorithms to segment customers by behavior and demographics.</p>
+                <a href="https://github.com/Mon3em20/Customer-Segmentation-with-Clustering-Techniques-Python-Data-Science-.git" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./assets/Attack%20on%20Titan%20Game.png" alt="Attack on Titan Game" class="project-img">
+            <div class="project-info">
+                <h3>Attack on Titan Game (Java, OOP)</h3>
+                <p>Console game with random enemy spawning and lane defense mechanics based on difficulty.</p>
+                <a href="https://github.com/Mon3em20/AttackOnTitan.git" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./assets/Gamified%20Educational%20Platform.png" alt="Gamified Educational" class="project-img">
+            <div class="project-info">
+                <h3>Gamified Educational Platform (SQL)</h3>
+                <p> Web platform integrating gamification for personalized learning and progress tracking.</p>
+                <a href="https://drive.google.com/file/d/1EBVCQt36RvUTASxXcSSg9Sfe5aKhf2ZY/view?usp=drive_link" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="project-card">
+            <img src="./assets/Supermarket%20GUI.png" alt="Supermarket GUI" class="project-img">
+            <div class="project-info">
+                <h3>Supermarket GUI (JavaFX)</h3>
+                <p>GUI application for supermarket management with cart updates and user alerts.</p>
+                <a href="https://github.com/Mon3em20/Super-market-GUI-" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="project-card">
+            <img src="./assets/Bi-Directional%20Chat%20App.png" alt="Chat App" class="project-img">
+            <div class="project-info">
+                <h3>Bi-Directional Chat App (Java)</h3>
+                <p>Client-server chat application with TCP packet analysis for network reliability.</p>
+                <a href="https://github.com/Mon3em20/Bi-Directional-Chat-Application-with-TCP-Analysis" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./assets/Binary%20Tree%20Search%20&%20Conversion%20(MIPS).png" alt="Binary Tree Search" class="project-img">
+            <div class="project-info">
+                <h3>Binary Tree Search & Conversion (MIPS)</h3>
+                <p>Implements DFS/BFS and conversion between tree representations in MIPS assembly.</p>
+                <a href="https://github.com/Mon3em20/Tree-Search-and-Conversion" target="_blank" class="github-link" title="View on GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="languages" class="card">
+    <h2 class="section-title">Languages</h2>
+    <ul class="edu-notes about-animated">
+        <div class="languages-circles">
+            <div class="circle-progress" data-percent="100">
+                <span class="circle-label">Arabic</span>
+                <span class="circle-value">Native</span>
+            </div>
+            <div class="circle-progress" data-percent="70">
+                <span class="circle-label">English</span>
+                <span class="circle-value">B2</span>
+            </div>
+            <div class="circle-progress" data-percent="50">
+                <span class="circle-label">German</span>
+                <span class="circle-value">A2</span>
+            </div>
+        </div>
+    </ul>
+</section>
+
+<section id="contact" class="card">
+    <h4 style="color:#b8c2d0;font-size:1.15rem;margin-bottom:0.5rem;">Get in Touch</h4>
+    <h2 class="section-title">Contact <span class="blue-accent">Me</span></h2>
+    <div class="contact-card">
+        <a href="mailto:monemsomida@gmail.com" class="contact-item" target="_blank">
+            <img src="./assets/gmail.png" alt="Gmail" class="contact-icon" />
+            <span>Gmail</span>
+        </a>
+        <a href="https://www.linkedin.com/in/monem-somida-9739b2312/" class="contact-item" target="_blank">
+            <img src="./assets/Linkedin.png" alt="LinkedIn" class="contact-icon" />
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://wa.me/01003632099" class="contact-item" target="_blank">
+            <img src="./assets/whatsapp.png" alt="WhatsApp" class="contact-icon" />
+            <span>WhatsApp</span>
+        </a>
+    </div>
+</section>
+
+<script src="./script.js"></script>
+</body>
+</html>
